@@ -1,0 +1,4 @@
+# Nmap 7.94 scan initiated Fri Oct 20 01:33:56 2023 as: nmap -p21,22,80,8082,9092 -sC -sV -A -oA ./OSCP/OSCP/HTB/Hawk/nmap/script 10.10.10.102
+Host: 10.10.10.102 ()	Status: Up
+Host: 10.10.10.102 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 8082/open/tcp//http//H2 database http console/, 9092/open/tcp//XmlIpcRegSvc?///
+# Nmap done at Fri Oct 20 01:34:28 2023 -- 1 IP address (1 host up) scanned in 32.25 seconds
