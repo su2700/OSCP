@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Sat Oct 21 05:44:08 2023 as: nmap -p- -sV -sC -&#45;open -oA TCP 192.168.228.72 -->
+<nmaprun scanner="nmap" args="nmap -p- -sV -sC -&#45;open -oA TCP 192.168.228.72" start="1697881448" startstr="Sat Oct 21 05:44:08 2023" version="7.94" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="192.168.228.72" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1697881448" endtime="1697881525"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.228.72" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65527">
+<extrareasons reason="conn-refused" count="65527" proto="tcp" ports="1-20,23-24,26-79,81-2120,2122-3127,3129-8592,8594-54786,54788-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="pyftpdlib" version="1.5.6" method="probed" conf="10"><cpe>cpe:/a:giampaolo_rodola:pyftpdlib</cpe></service><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa; Connected to: 192.168.228.72:21&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status."><elem key="STAT">&#xa;FTP server status:&#xa; Connected to: 192.168.228.72:21&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status.</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 5b:a7:37:fd:55:6c:f8:ea:03:f5:10:bc:94:32:07:18 (RSA)&#xa;  256 ab:da:6a:6f:97:3f:b2:70:3e:6c:2b:4b:0c:b7:f6:4c (ECDSA)&#xa;  256 ae:29:d4:e3:46:a1:b1:52:27:83:8f:8f:b0:c4:36:d1 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">5ba737fd556cf8ea03f510bc94320718</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDWAl1JMEsT6kbFmhkFFIZbd2aH3DuBpmLjo1MvWSSFsUlQ+rN9wQ8y469ng7vKZDx19ke+JZ9jUcuJAu4zQ6BHjHDcLTy44WJCESD4oACMCK6+tlMneuINf6KTMr3urfvkvlULi2ffNbMl6Ko9gS/Oqh8Cm9HyAXGTK5MVgmW39QFTXdn7ByQMnnXjKmJ+5nXbf9c9Al9JJCFQAe0irCq2w3ubylh83SwPWsunapn0pW8Czsm2nsFL6aRXCOoNeK7/GmcC8lqENMnUIVRauhpDR3radZ4Uv4ejzHL8H+IklpgVRqBiuzRiqHpGlotNYadcArbYZ4auDwibrtRwgTlD</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">abda6a6f973fb2703e6c2b4b0cb7f64c</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM9EuXzK3hXcn3ml6Kj69Bo1DACMk1AZWWm9wgPGIyPBQyQLXLazAtoqEP1phT1BNmtyAvScCwsydQwUsRH/3vA=</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">ae29d4e346a1b15227838f8fb0c436d1</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIATUyTSmh1Tep0cnIVXvQBD6IQTjI8TBEmQEba1Fzkv2</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" method="probed" conf="10"><cpe>cpe:/a:exim:exim</cpe></service><script id="smtp-commands" output="solstice Hello nmap.scanme.org [192.168.45.200], SIZE 52428800, 8BITMIME, PIPELINING, CHUNKING, PRDR, HELP&#xa; Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="pyftpdlib" version="1.5.6" method="probed" conf="10"><cpe>cpe:/a:giampaolo_rodola:pyftpdlib</cpe></service><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa; Connected to: 192.168.228.72:2121&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status."><elem key="STAT">&#xa;FTP server status:&#xa; Connected to: 192.168.228.72:2121&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status.</elem>
+</script><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drws-&#45;&#45;&#45;&#45;&#45;   2 www-data www-data     4096 Jun 18  2020 pub"/></port>
+<port protocol="tcp" portid="3128"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" product="Squid http proxy" version="4.6" method="probed" conf="10"><cpe>cpe:/a:squid-cache:squid:4.6</cpe></service><script id="http-server-header" output="squid/4.6"><elem>squid/4.6</elem>
+</script><script id="http-title" output="ERROR: The requested URL could not be retrieved"><elem key="title">ERROR: The requested URL could not be retrieved</elem>
+</script></port>
+<port protocol="tcp" portid="8593"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="PHP cli server" version="5.5 or later" extrainfo="PHP 7.3.14-1" method="probed" conf="10"><cpe>cpe:/a:php:php</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="54787"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="PHP cli server" version="5.5 or later" extrainfo="PHP 7.3.14-1" method="probed" conf="10"><cpe>cpe:/a:php:php</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script></port>
+</ports>
+<times srtt="51957" rttvar="2905" to="100000"/>
+</host>
+<runstats><finished time="1697881526" timestr="Sat Oct 21 05:45:26 2023" summary="Nmap done at Sat Oct 21 05:45:26 2023; 1 IP address (1 host up) scanned in 78.10 seconds" elapsed="78.10" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
