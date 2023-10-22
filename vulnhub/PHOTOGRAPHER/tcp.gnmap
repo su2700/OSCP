@@ -1,0 +1,4 @@
+# Nmap 7.94 scan initiated Sun Oct 22 10:04:47 2023 as: nmap -p- -sV -sC -oA tcp 192.168.0.102
+Host: 192.168.0.102 ()	Status: Up
+Host: 192.168.0.102 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//¿…≠ÂÙU//Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)/, 8000/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Ignored State: closed (65531)
+# Nmap done at Sun Oct 22 10:05:03 2023 -- 1 IP address (1 host up) scanned in 15.89 seconds

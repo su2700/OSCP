@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Sun Oct 22 10:04:47 2023 as: nmap -p- -sV -sC -oA tcp 192.168.0.102 -->
+<nmaprun scanner="nmap" args="nmap -p- -sV -sC -oA tcp 192.168.0.102" start="1697983487" startstr="Sun Oct 22 10:04:47 2023" version="7.94" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="192.168.0.102" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1697983487" endtime="1697983503"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.0.102" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="conn-refused" count="65531" proto="tcp" ports="1-79,81-138,140-444,446-7999,8001-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-title" output="Photographer by v1n1v131r4"><elem key="title">Photographer by v1n1v131r4</elem>
+</script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="PHOTOGRAPHER" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="&#xc0;&#xc9;&#xad;&#xe5;&#xf4;U" product="Samba smbd" version="4.3.11-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="PHOTOGRAPHER" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="daisa ahomi"><elem key="title">daisa ahomi</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="http-generator" output="Koken 0.22.24"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 1h19m59s, deviation: 2h18m33s, median: 0s"><elem key="median">0</elem>
+<elem key="stddev">8313</elem>
+<elem key="mean">4799</elem>
+<elem key="count">3</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.3.11-Ubuntu)&#xa;  Computer name: photographer&#xa;  NetBIOS computer name: PHOTOGRAPHER\x00&#xa;  Domain name: \x00&#xa;  FQDN: photographer&#xa;  System time: 2023-10-22T10:05:02-04:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.3.11-Ubuntu</elem>
+<elem key="server">PHOTOGRAPHER\x00</elem>
+<elem key="date">2023-10-22T10:05:02-04:00</elem>
+<elem key="fqdn">photographer</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2023-10-22T14:05:02&#xa;  start_date: N/A"><elem key="date">2023-10-22T14:05:02</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="nbstat" output="NetBIOS name: PHOTOGRAPHER, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)"/><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script></hostscript><times srtt="251" rttvar="160" to="100000"/>
+</host>
+<runstats><finished time="1697983503" timestr="Sun Oct 22 10:05:03 2023" summary="Nmap done at Sun Oct 22 10:05:03 2023; 1 IP address (1 host up) scanned in 15.89 seconds" elapsed="15.89" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

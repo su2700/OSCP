@@ -1,0 +1,41 @@
+# Nmap 7.94 scan initiated Sun Oct 22 10:04:47 2023 as: nmap -p- -sV -sC -oA tcp 192.168.0.102
+Nmap scan report for 192.168.0.102
+Host is up (0.00025s latency).
+Not shown: 65531 closed tcp ports (conn-refused)
+PORT     STATE SERVICE     VERSION
+80/tcp   open  http        Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Photographer by v1n1v131r4
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  ¿…≠ÂÙU      Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+8000/tcp open  http        Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: daisa ahomi
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-generator: Koken 0.22.24
+Service Info: Host: PHOTOGRAPHER
+
+Host script results:
+|_clock-skew: mean: 1h19m59s, deviation: 2h18m33s, median: 0s
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: photographer
+|   NetBIOS computer name: PHOTOGRAPHER\x00
+|   Domain name: \x00
+|   FQDN: photographer
+|_  System time: 2023-10-22T10:05:02-04:00
+| smb2-time: 
+|   date: 2023-10-22T14:05:02
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_nbstat: NetBIOS name: PHOTOGRAPHER, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 22 10:05:03 2023 -- 1 IP address (1 host up) scanned in 15.89 seconds

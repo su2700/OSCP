@@ -1,0 +1,24 @@
+┌──(kali㉿kali)-[~/OSCP/OSCP/vulnhub/PHOTOGRAPHER]
+└─$ IP=192.168.0.102
+
+┌──(kali㉿kali)-[~/OSCP/OSCP/vulnhub/PHOTOGRAPHER]
+└─$ echo $IP
+192.168.0.102
+
+┌──(kali㉿kali)-[~/OSCP/OSCP/vulnhub/PHOTOGRAPHER]
+└─$ URL=http://192.168.0.102/FUZZ
+
+┌──(kali㉿kali)-[~/OSCP/OSCP/vulnhub/PHOTOGRAPHER]
+└─$ echo $URL
+http://192.168.0.102/FUZZ
+
+wfuzz -c -z file, /usr/share/seclists/Discovery/Web-Content/raft-medium-files.txt --hc 404 "$URL"
+find "index.html.old"   
+cat /home/kali/Downloads/index.html.old | html2text
+
+export URL="http://192.168.0.102:8000/FUZZ"
+wfuzz again for 8000
+
+wfuzz -c -z file,/usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt --hc 404 "$URL"
+
+another terminal URL=http://192.168.0.102
